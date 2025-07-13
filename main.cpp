@@ -3,8 +3,16 @@ using namespace std;
 
 const int MAX_SIZE = 10;
 
-void insertElement() {
+void enqueue(int arr[], int data, int &rear, int &front) {
+    if (rear == MAX_SIZE - 1) {
+        cout << "Limit reached" << endl;
+    }
+    else {
 
+        if (rear == front){
+
+        }
+    }
 }
 
 void deleteElement(){
@@ -15,8 +23,8 @@ void examineElement() {
 
 }
 int main() {
-    int n;
-    int rear; //hold indeces
-    int queue[n];
+    int rear = -1;
+    int front = -1;
+    int queue[MAX_SIZE];
 
 }
