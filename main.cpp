@@ -1,7 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+void insertElement() {
 
+}
+
+void deleteElement(){
+
+}
+
+void examineElement() {
+
+}
+int main() {
+    int n;
+    int rear; //hold indeces
+    int queue[n];
 
 }
