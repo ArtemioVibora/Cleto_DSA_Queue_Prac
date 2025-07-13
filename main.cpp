@@ -24,9 +24,7 @@ void dequeue(int arr[], int data, int &rear, int &front){
         cout << "Queue is empty" << endl;
     }
     else {
-        while (i < rear && arr[i] != data) {
 
-        }
     }
 
 }
