@@ -9,13 +9,25 @@ void enqueue(int arr[], int data, int &rear, int &front) {
     }
     else {
 
-        if (rear == front){
-
+        if (front == -1){
+            front = 0;
         }
+        rear++;
+        arr[rear] = data;
     }
 }
 
-void deleteElement(){
+void dequeue(int arr[], int data, int &rear, int &front){
+
+    int i = 0;
+    if (rear == -1) {
+        cout << "Queue is empty" << endl;
+    }
+    else {
+        while (i < rear && arr[i] != data) {
+
+        }
+    }
 
 }
 
