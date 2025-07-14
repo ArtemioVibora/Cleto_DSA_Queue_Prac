@@ -72,7 +72,7 @@ void runProgram() {
             case 2:
                 cout << "Enter the data: ";
                 cin >> data;
-                dequeue(queue, data, rear, front);
+                pop(queue, data, rear, front);
                 break;
             case 3:
                 printArray(queue, rear, front);
