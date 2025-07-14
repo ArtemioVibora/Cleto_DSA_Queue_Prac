@@ -21,7 +21,7 @@ void enqueue(int arr[], int data, int &rear, int &front) {
     }
 }
 
-void dequeue(int arr[], int data, int &rear, int &front){
+void pop(int arr[], int data, int &rear, int &front){
 
     if (rear == -1) {
         cout << "Queue is empty" << endl;
@@ -60,13 +60,35 @@ void runProgram() {
         cout << "2. Dequeue" << endl;
         cout << "3. Print Array" << endl;
         cout << "4. Exit" << endl;
+        cout << ">>>> ";
+        cin >> input;
+
+        switch (input) {
+            case 1:
+                cout << "Enter the data: ";
+                cin >> data;
+                enqueue(queue, data, rear, front);
+                break;
+            case 2:
+                cout << "Enter the data: ";
+                cin >> data;
+                dequeue(queue, data, rear, front);
+                break;
+            case 3:
+                printArray(queue, rear, front);
+                break;
+            case 4:
+                cout << "Exiting..." << endl;
+                break;
+            default:
+                cout << "Invalid input" << endl;
+                break;
+        }
     }
 
 
 }
 int main() {
 
-
-
-
+    runProgram();
 }
